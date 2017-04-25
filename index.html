@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Web Authentication Demo</title>
+  <style type="text/css">
+    .container {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <input type="email" id="txtEmail" placeholder="Email" class="input" />
+  <input type="password" id="txtPassword" placeholder="Password" class="input" />
+  <button id="btnLogIn">Log In</button>
+  <button id="btnSignUp">Sign Up</button>
+  <button id="btnLogout">Log Out</button>
+  <div id="info">
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA2v3Yp06YNqtuZ6cbDfUrUC2Bn7ZW513U",
+    authDomain: "web-quickstart-2ae78.firebaseapp.com",
+    databaseURL: "https://web-quickstart-2ae78.firebaseio.com",
+    projectId: "web-quickstart-2ae78",
+    storageBucket: "web-quickstart-2ae78.appspot.com",
+    messagingSenderId: "1058464697904"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
